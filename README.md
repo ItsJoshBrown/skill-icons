@@ -13,7 +13,7 @@
 - [Get Icons Names](#get-icons-names)
 - [Centering Icons](#centering-icons)
 - [Icons List](#icons-list)
-    - [💖 Support the Project](#-support-the-project)
+  - [💖 Support the Project](#-support-the-project)
 
 # Example
 
@@ -93,7 +93,7 @@ Want to center the icons in your readme? The SVGs are automatically resized, so 
 # Icons List
 
 Here's a list of all the icons currently supported. Feel free to open an issue to suggest icons to add!
-
+ <!-- START ICONS LIST -->
 |      Icon ID        |                           Icon                           |
 | :-----------------: | :------------------------------------------------------: |
 |       `ableton`     |      <img src="./assets/ableton-dark.svg" width="48">    |
@@ -439,7 +439,7 @@ Here's a list of all the icons currently supported. Feel free to open an issue t
 |      `youtube`      |        <img src="./assets/youtube.svg" width="48">       |
 |        `zed`        |       <img src="./assets/zed-dark.svg" width="48">       |
 |        `zig`        |       <img src="./assets/zig-dark.svg" width="48">       |
-
+<!-- END ICONS LIST -->
 ---
 
 ## 💖 Support the Project

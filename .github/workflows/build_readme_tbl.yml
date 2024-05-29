@@ -1,0 +1,41 @@
+name: Update README with Icons
+
+on:
+  push:
+    paths:
+      - 'assets/**'
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  update-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.x'
+
+    - name: Update README
+      run: python scripts/update_readme.py
+
+    - name: Create Pull Request
+      uses: peter-evans/create-pull-request@v6
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'Update README icons'
+        title: 'Update README with Icons'
+        body: |
+          Updating the README with the latest icons table.
+        labels: 'automated'
+
