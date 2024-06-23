@@ -94,6 +94,8 @@ Want to center the icons in your readme? The SVGs are automatically resized, so 
 
 Here's a list of all the icons currently supported. Feel free to open an issue to suggest icons to add!
 
+<!-- START ICONS LIST -->
+
 |      Icon ID        |                           Icon                           |
 | :-----------------: | :------------------------------------------------------: |
 |       `ableton`     |      <img src="./assets/ableton-auto.svg" width="48">    |
